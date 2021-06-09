@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<!-- <script src="Reid_Exercise9.js"></script> -->
+</head>
+<body>
+	<div id="output"></div>
+	<script>
+		let toDoList = ["Take meds", "Code", "Read", "Shop", "Pay bills", "Research topic"];
+		let out = "<h1>TO-DO:</h1>";
+		let length = toDoList.length;
+		function addToDos(){
+			for (i = 0; i < length; i++){
+			out += "<p>" + toDoList[i] + "</p>";
+			document.getElementById("output").innerHTML = out; 
+			}
+		}
+		
+		addToDos();
+        
+
+        
+        
+        
+		
+		
+     </script>
+</body>
+</html>
